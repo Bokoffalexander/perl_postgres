@@ -1,0 +1,19 @@
+**************************************
+Require:
+sudo apt install gcc-x86-64-linux-gnu
+
+To install perl modules:
+        # colored print
+        cpan> install Data::Printer
+or
+        # database access module for the Perl programming language.
+        cpan -i DBI
+
+        # for postgres
+        cpan> install DBD::Pg # dbi::pg
+        sudo apt install libpq-dev 
+        export POSTGRES_HOME=/usr/lib/postgresql/12/
+
+To check it:
+        perl -e 'use DBI;'
+**************************************
